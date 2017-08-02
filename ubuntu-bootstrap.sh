@@ -10,6 +10,6 @@ cp /home/ubuntu/tls-clientauth-aws-example/tls-clientauth.conf /etc/apache2/site
 ln -s /etc/apache2/sites-available/tls-clientauth.conf /etc/apache2/sites-enabled/
 sudo a2enmod ssl
 
-sudo -H -u ubuntu bash -c 'cd; bash ~ubuntu/tls-clientauth-aws-example/server3.sh' 
+sudo -H -u ubuntu bash -c 'cd; bash ~ubuntu/tls-clientauth-aws-example/server.sh' 
 
 service apache2 restart
