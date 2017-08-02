@@ -7,7 +7,8 @@ https://blog.didierstevens.com/2008/12/30/howto-make-your-own-cert-with-openssl/
 
 Launch an ubuntu ec2 instance using this as your user data script:
 
-#!/bin/sh curl https://raw.githubusercontent.com/travisnoll/tls-clientauth-aws-example/master/ubuntu-bootstrap.sh | sh
+#!/bin/sh
+curl https://raw.githubusercontent.com/travisnoll/tls-clientauth-aws-example/master/ubuntu-bootstrap.sh | sh
 
 
 This should setup apache with a self-signed certificate and a set of client credentials.
